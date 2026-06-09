@@ -1,0 +1,36 @@
+.rb-blur-text {
+  display: block;
+}
+
+.rb-blur-text__char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(18px) scale(0.98);
+  filter: blur(14px);
+}
+
+.rb-blur-text.is-visible .rb-blur-text__char {
+  animation-name: rb-blur-in;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes rb-blur-in {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rb-blur-text__char {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+
+  .rb-blur-text.is-visible .rb-blur-text__char {
+    animation: none;
+  }
+}
