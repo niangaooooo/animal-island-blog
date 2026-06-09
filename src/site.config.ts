@@ -40,7 +40,7 @@ export const siteConfig: SiteConfig = {
   location: "南方海岸 · 代码小屋",
   links: [
     { label: "GitHub", url: "https://github.com/" },
-    { label: "邮箱", url: "mailto:hello@example.com" },
+    { label: "邮箱", url: "mailto:niangaooooo@icloud.com" },
     { label: "RSS", url: "#/posts" }
   ],
   navItems: [
