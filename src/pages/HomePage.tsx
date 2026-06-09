@@ -202,9 +202,13 @@ export function HomePage() {
 
       <section className="page-section page-section--subscribe">
         <div className="subscribe-panel">
-          <div>
+          <div className="subscribe-panel__copy">
             <Title color="app-green">{siteConfig.subscribe.title}</Title>
             <p>{siteConfig.subscribe.description}</p>
+          </div>
+          <div className="subscribe-panel__icons" aria-hidden="true">
+            <Icon item={300} size={58} bounce />
+            <Icon name="icon-chat" size={34} bounce />
           </div>
           <div className="subscribe-form">
             <Input
@@ -228,9 +232,6 @@ export function HomePage() {
             </Button>
           </div>
           {subscribed && <p className="subscribe-panel__note">已经把这封来信放进海岸邮筒。</p>}
-        </div>
-        <div className="phone-preview" aria-hidden="true">
-          <Phone />
         </div>
       </section>
     </div>
