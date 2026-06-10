@@ -5,8 +5,9 @@ import { siteConfig } from "../../site.config";
 
 const navIcons: Record<string, IconName> = {
   "/": "icon-map",
-  "/posts": "icon-chat",
+  "/posts": "icon-critterpedia",
   "/about": "icon-design",
+  "/guestbook": "icon-chat",
 };
 
 export function AppShell() {

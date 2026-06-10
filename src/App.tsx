@@ -3,6 +3,7 @@ import { HashRouter, Route, Routes, useLocation } from "react-router-dom";
 import { Cursor } from "animal-island-ui";
 import { AppShell } from "./components/layout/AppShell";
 import { AboutPage } from "./pages/AboutPage";
+import { GuestbookPage } from "./pages/GuestbookPage";
 import { HomePage } from "./pages/HomePage";
 import { PostPage } from "./pages/PostPage";
 import { PostsPage } from "./pages/PostsPage";
@@ -28,6 +29,7 @@ export default function App() {
             <Route path="posts" element={<PostsPage />} />
             <Route path="posts/:slug" element={<PostPage />} />
             <Route path="about" element={<AboutPage />} />
+            <Route path="guestbook" element={<GuestbookPage />} />
           </Route>
         </Routes>
       </Cursor>

@@ -46,7 +46,8 @@ export const siteConfig: SiteConfig = {
   navItems: [
     { label: "首页", to: "/" },
     { label: "笔记", to: "/posts" },
-    { label: "关于", to: "/about" }
+    { label: "关于", to: "/about" },
+    { label: "留言", to: "/guestbook" }
   ],
   hero: {
     eyebrow: "personal island journal",
